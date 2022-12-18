@@ -1,0 +1,44 @@
+::selection {
+  background: aquamarine;
+  color: #111;
+}
+
+:root {
+  background: #518;
+  color: gainsboro;
+  transition: 1s;
+}
+
+:root:active {
+  background: #318;
+}
+
+:any-link {
+  color: inherit;
+  transition: 1s;
+}
+
+.luna {
+  background: orange;
+  color: #111;
+}
+
+:focus {
+  background: #1ed;
+  color: #111;
+}
+
+:active {
+  outline-color: #ee1;
+}
+
+:active::marker {
+  color: #111;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    background: #111;
+    color: gainsboro;
+  }
+}
